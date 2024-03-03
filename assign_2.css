@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "kaka";
+  src: url(/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+* {
+  background: #f3f7e8;
+  text-align: center;
+}
+#mainTopic {
+  color: rgb(0, 0, 255);
+  font-family: "kaka";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, Georgia, "Times New Roman", Times, serif;
+}
+p {
+  color: aqua;
+  background: cornflowerblue;
+}
+div button {
+  color: white;
+  background: #000;
+}
+div button:hover {
+  color: #f3f7e8;
+  background: #1e0957;
+}
+p:nth-child(2n + 1) {
+  color: rgb(9, 9, 9);
+}
+h1::first-letter {
+  color: #0f0;
+}
+
+input:checked + label {
+  color: #0f0;
+}
+input[type="checkbox"]:checked + label {
+  color: rgb(38, 0, 255);
+}
+
+.ab {
+  color: blue;
+}
+h3 {
+  color: #0f0;
+}
