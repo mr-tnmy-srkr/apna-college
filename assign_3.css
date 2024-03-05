@@ -1,0 +1,51 @@
+/* .q-1 {
+  height: 150px;
+  width: 300px;
+  background-color: gray;
+  border: 5px dotted black;
+  margin-top: 20px;
+  margin-right: 1em;
+  margin-bottom: 40px;
+  margin-left: 2em;
+  padding: 1em;
+} */
+.span1,
+.span2,
+.span3 {
+  height: 100px;
+  width: 100px;
+  background: pink;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+ul {
+
+}
+li {
+  display: inline;
+}
+li a {
+  text-decoration: none;
+  font-size: 32px;
+}
+section{
+    /* font-size: 20px; */
+}
+body{
+    font-size: 30px;
+}
+section div{
+   font-size: 2rem; 
+   border: 1px solid red;
+   /* padding: 2rem; */
+}
+
+section form{
+    border: 1px solid black;
+    background: hsl(240, 54%, 64%);
+    padding: 10px;
+}
+input[type="text"]{
+background: inherit;
+}
