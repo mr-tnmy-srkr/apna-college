@@ -12,4 +12,4 @@ while (copiedNumber > 0) {
   count++;
   copiedNumber = Math.floor(copiedNumber / 10);
 }
-console.log(count);
+console.log(count); //6
