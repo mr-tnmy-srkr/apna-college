@@ -39,17 +39,17 @@ function saveToDb(data) {
 //more improved version .then er vitor return kore again call korbo
 
 saveToDb("Apna College")
-  .then(() => {
-    console.log("data1 saved successfully");
+  .then((result) => {
+    console.log("data1 saved successfully", result);
     return saveToDb("Hello World");
   })
-  .then(() => {
-    console.log("data2 saved successfully");
+  .then((result) => {
+    console.log("data2 saved successfully", result);
     return saveToDb("Hello Earth");
   })
-  .then(() => {
-    console.log("data3 saved successfully");
+  .then((result) => {
+    console.log("data3 saved successfully", result);
   })
-  .catch(() => {
-    console.log("rejected");
+  .catch((error) => {
+    console.log("rejected", error);
   });
