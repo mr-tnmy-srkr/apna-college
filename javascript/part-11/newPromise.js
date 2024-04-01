@@ -45,7 +45,7 @@ saveToDb("Apna College")
   })
   .then((result) => {
     console.log("data2 saved successfully", result);
-    return saveToDb("Hello Earth");
+    return saveToDb("Hello Universe");
   })
   .then((result) => {
     console.log("data3 saved successfully", result);
