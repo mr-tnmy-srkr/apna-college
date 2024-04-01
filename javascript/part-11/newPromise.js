@@ -23,13 +23,32 @@ function saveToDb(data) {
 
 //   improved version
 
-saveToDb("Apna College")
+/* saveToDb("Apna College")
   .then(() => {
     console.log("data1 saved successfully");
     saveToDb("Hello World")
     .then(() => {
       console.log("data2 saved successfully");
     });
+  })
+  .catch(() => {
+    console.log("rejected");
+  });
+ */
+
+//more improved version .then er vitor return kore again call korbo
+
+saveToDb("Apna College")
+  .then(() => {
+    console.log("data1 saved successfully");
+    return saveToDb("Hello World");
+  })
+  .then(() => {
+    console.log("data2 saved successfully");
+    return saveToDb("Hello Earth");
+  })
+  .then(() => {
+    console.log("data3 saved successfully");
   })
   .catch(() => {
     console.log("rejected");
