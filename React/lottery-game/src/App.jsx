@@ -2,9 +2,17 @@ import "./App.css";
 import Lottery from "./Lottery";
 
 function App() {
+  /*  let winCondition = (ticket) => {
+    return sum(ticket) === 15;
+  }; */
+  let winCondition = (ticket) => {
+    // console.log(ticket);
+    return ticket.every((num) => num === ticket[0]);
+  };
+
   return (
     <>
-      <Lottery />
+      <Lottery n={3} winCondition={winCondition} />
     </>
   );
 }
